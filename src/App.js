@@ -14,9 +14,9 @@ function App() {
       <div className='leftSection'>
         <div className='profileText'>
           <div className='imgBx'>
-            <img src={photo}  alt='My_photo' />
+            <img src={photo} alt='My_photo' />
           </div>
-          <h2>Aleksei Shunko<br/><span>Junior Frontend Developer</span></h2>
+          <h2>Aleksei Shunko<br /><span>Junior Frontend Developer</span></h2>
         </div>
         <div className='contactInfo'>
           <h3 className='title'>Contact Info</h3>
@@ -43,16 +43,16 @@ function App() {
           <h3 className='title'>Education</h3>
           <ul>
             <li>
-            <h5>2010-2015</h5>
-            <h4>Design, Construction and Exploitation of Gas and Oil Pipelines and Storages</h4>
-            <h4>Polotsk State University</h4>
+              <h5>2010-2015</h5>
+              <h4>Design, Construction and Exploitation of Gas and Oil Pipelines and Storages</h4>
+              <h4>Polotsk State University</h4>
             </li>
             <li>
-            <h5>2010-2015</h5>
-            <h4>Design, Construction and Exploitation of Gas and Oil Pipelines and Storages</h4>
-            <h4>Polotsk State University</h4>
+              <h5>2010-2015</h5>
+              <h4>Design, Construction and Exploitation of Gas and Oil Pipelines and Storages</h4>
+              <h4>Polotsk State University</h4>
             </li>
-            
+
           </ul>
         </div>
 
@@ -60,42 +60,113 @@ function App() {
           <h3 className='title'>Languages</h3>
           <ul>
             <li>
-                <span className='text'>Russian</span>
-                <span className='percent'>
-                <div style={{width: '95%'}}></div>
-                </span>
+              <span className='text'>Russian</span>
+              <span className='percent'>
+                <div style={{ width: '95%' }}></div>
+              </span>
             </li>
             <li>
-                <span className='text'>English</span>
-                <span className='percent'>
-                  <div style={{width: '35%'}}></div>
-                </span>
+              <span className='text'>English</span>
+              <span className='percent'>
+                <div style={{ width: '35%' }}></div>
+              </span>
             </li>
           </ul>
-          </div>
+        </div>
       </div>
       <div className='rightSection'>
         <div className='about'>
           <h2 className='title2'>Profile</h2>
-          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, 
-            molestiae aut? Id saepe ratione totam ipsa eius deleniti pariatur voluptatum placeat, 
-            exercitationem corporis sint soluta repudiandae, fugiat perspiciatis! Quam, esse?</p><br/>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, 
-            molestiae aut? Id saepe ratione totam ipsa eius deleniti pariatur voluptatum placeat, 
+          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,
+            molestiae aut? Id saepe ratione totam ipsa eius deleniti pariatur voluptatum placeat,
+            exercitationem corporis sint soluta repudiandae, fugiat perspiciatis! Quam, esse?</p><br />
+          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,
+            molestiae aut? Id saepe ratione totam ipsa eius deleniti pariatur voluptatum placeat,
             exercitationem corporis sint soluta repudiandae, fugiat perspiciatis! Quam, esse?</p>
         </div>
         <div className='about'>
-        <h2 className='title2'>Experience</h2>
-        <div className='box'>
-          <div className='years_company'>
-            <h5>2015-2022</h5>
-            <h5>Company Name</h5>
+          <h2 className='title2'>Experience</h2>
+          <div className='box'>
+            <div className='years_company'>
+              <h5>2015-2022</h5>
+              <h5>Company Name</h5>
+            </div>
+            <div className='text'>
+              <h4>Dispatcher</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,
+                molestiae aut? Id saepe ratione totam ipsa eius deleniti pariatur voluptatum placeat,
+              </p>
+            </div>
+          </div>
+          <div className='box'>
+            <div className='years_company'>
+              <h5>2015-2022</h5>
+              <h5>Company Name</h5>
+            </div>
+            <div className='text'>
+              <h4>Dispatcher</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,
+                molestiae aut? Id saepe ratione totam ipsa eius deleniti pariatur voluptatum placeat,
+              </p>
+            </div>
           </div>
         </div>
+
+        <div className='about skills'>
+          <h2 className='title2'>Professional Skils</h2>
+          <div className='box'>
+            <h4>HTML</h4>
+            <div className='percent'>
+              <div style={{ width: '80%' }}></div>
+            </div>
+          </div>
+          <div className='box'>
+            <h4>CSS</h4>
+            <div className='percent'>
+              <div style={{ width: '75%' }}></div>
+            </div>
+          </div>
+          <div className='box'>
+            <h4>JavaScript</h4>
+            <div className='percent'>
+              <div style={{ width: '95%' }}></div>
+            </div>
+          </div>
+          <div className='box'>
+            <h4>React</h4>
+            <div className='percent'>
+              <div style={{ width: '85%' }}></div>
+            </div>
+          </div>
+          <div className='box'>
+            <h4>Git</h4>
+            <div className='percent'>
+              <div style={{ width: '85%' }}></div>
+            </div>
+          </div>
+           <div className='box'>
+            <h4>Redux</h4>
+            <div className='percent'>
+              <div style={{ width: '90%' }}></div>
+            </div>
+          </div>
         </div>
+
+         
+        <div className='about interest'>
+          <h2 className='title2'>Interest</h2>
+          <ul>
+            <li><LocationOnIcon className='icon'/>Gaming</li>
+            <li><LocationOnIcon className='icon'/>Gaming</li>
+            <li><LocationOnIcon className='icon'/>Gaming</li>
+            <li><LocationOnIcon className='icon'/>Gaming</li>
+          </ul>
+          </div>
       </div>
-     
-       
+
+
     </div>
   );
 }
