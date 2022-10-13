@@ -1,5 +1,6 @@
  :root {
    --background: #f9f9f9;
+   --backgroundResume: #fff;
    --primaryColor: #333;
    --secondColor: #03a9f4;
    --progresColor: #ccc;
@@ -25,6 +26,7 @@
    justify-content: center;
    align-items: center;
    width: 100%;
+   
  }
 
  .container {
@@ -32,7 +34,7 @@
    width: 100%;
    max-width: 1000px;
    min-height: 1000px;
-   background: #fff;
+   background: var(--backgroundResume);
    display: grid;
    grid-template-columns: 1fr 2fr;
    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
@@ -51,6 +53,7 @@
    align-items: center;
    padding-bottom: 20px;
    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+   
  }
 
  .profileText .imgBx {
@@ -78,6 +81,7 @@
    margin-top: 20px;
    color: var(--primaryColor);
    line-height: 1.4em;
+   transition: 0.5s;
  }
 
  .profileText h2 span {
@@ -238,8 +242,10 @@
   margin: 10px 0;
  }
 
- .about.interest ul li .icon{
+ .about.interest ul li span{
   display: inline-block;
-   vertical-align: middle;
+  vertical-align: middle;
   color: var(--secondColor);
+  margin-right: 5px;
+
  }
