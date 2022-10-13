@@ -273,27 +273,48 @@
    .about.interest ul {
      display: grid;
      grid-template-columns: repeat(2, 1fr);
-
    }
  }
 
  @media (max-width: 600px) {
-
    .about.interest ul {
      display: grid;
      grid-template-columns: repeat(1, 1fr);
    }
-
    .about .box {
      flex-direction: column;
    }
-
    .about .box .years_company {
      margin-bottom: 5px;
    }
-
    .skills .box {
      grid-template-columns: repeat(1, 1fr);
    }
+
+ }
+
+ /* ========== Кнопки ========== */
+
+.blockBtn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: flex;
+  justify-content: end;
+  z-index: 10;
+}
+ 
+ .blockBtn button{
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  background: var(--secondColor);
+  color: var(--primaryColor);
+  box-shadow: 0 0 10px var(--primaryColor);
+  margin-left: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
 
  }
