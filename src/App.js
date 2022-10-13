@@ -140,7 +140,7 @@ function App() {
           <h2 className='title2'>{data.experience.title}</h2>
           {
             data.experience.list.map(el => (
-              <div className='box' key={el.key}>
+              <div className='box' key={el.name}>
               <div className='years_company'>
                 <h5>{el.date}</h5>
                 <h5>{el.name}</h5>
@@ -173,7 +173,7 @@ function App() {
           <ul>
             {
               data.interest.list.map(el => (
-                <li>
+                <li key={el.name}>
                 <span>{el.icon}</span>
                 {el.name}
                 </li>
