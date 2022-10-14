@@ -40,7 +40,7 @@ export const dataEng = {
     languages: {title: 'Languages', list: [
       {name: 'Russian', percent: '95%'},
       {name: 'English', percent: '35%'},
-      {name: 'Belorusian', percent: '95%'},
+      {name: 'Belorussian', percent: '95%'},
     ]},
     about: {title: 'Profile', 
     p1: `I'm a cheerful guy 29 years old who likes programming, outdoor activities, team sports.
@@ -61,7 +61,7 @@ export const dataEng = {
     ]},
     skills: {title: 'Professional Skills', list: [
       {name: 'HTML', percent: '90%'},
-      {name: 'CSS, SASS', percent: '85%'},
+      {name: 'CSS, SASS', percent: '90%'},
       {name: 'Javascript', percent: '90%'},
       {name: 'Typescript', percent: '70%'},
       {name: 'React', percent: '85%'},

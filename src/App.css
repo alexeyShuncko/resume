@@ -337,10 +337,20 @@
   padding: 5px 10px;
   background: var(--secondColor);
   color: var(--primaryColor);
-  box-shadow: 0 0 10px var(--primaryColor);
+  box-shadow: 0 3px 10px var(--primaryColor);
   margin-left: 10px;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 500;
+  border-radius: 5px;
+  opacity: 0.9;
+ }
 
+ .blockBtn button:active {
+  box-shadow: 0 3px 10px var(--primaryColor),
+              0 3px 20px var(--primaryColor);
+ }
+
+ .blockBtn button:hover {
+  opacity: 1;
  }

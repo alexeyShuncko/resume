@@ -60,7 +60,7 @@ export const dataRus = {
     ]},
     skills: {title: 'Профессиональные навыки', list: [
       {name: 'HTML', percent: '90%'},
-      {name: 'CSS, SASS', percent: '85%'},
+      {name: 'CSS, SASS', percent: '90%'},
       {name: 'Javascript', percent: '90%'},
       {name: 'Typescript', percent: '70%'},
       {name: 'React', percent: '85%'},
