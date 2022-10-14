@@ -13,10 +13,6 @@ import  {ReactComponent as Skype} from '../images/skype.svg';
 
 
 
-
-
-
-
 export const dataEng = {
     profileText: {name: 'Aleksei Shunko',job: 'Junior Frontend Developer'},
     contactInfo: {
@@ -44,8 +40,8 @@ export const dataEng = {
     ]},
     about: {title: 'Profile', 
     p1: `I'm a cheerful guy 29 years old who likes programming, outdoor activities, team sports.
-    Every day I try to learn something new. If you ask me: “What is the name of your favorite football team?”,
-     then I will answer - “Arsenal”.`},
+    Every day I try to learn something new. If you ask me: "What is the name of your favorite football team?",
+     then I will answer - "Arsenal".`},
     experience: {title: 'Experience', list: [
       {date: '2021-present', name: 'GitHub, freelance', job: 'Junior Frontend Developer', 
       description: `Practical application of acquired knowledge. Development of own projects on github,

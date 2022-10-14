@@ -1,13 +1,8 @@
 import './App.css';
-import Resume from './components/resume';
+import Resume from './components/Resume';
 
 
+const App =()=>  <Resume />
 
-function App() {
-
-  return (
-   <Resume />
-  )
-}
 
 export default App;

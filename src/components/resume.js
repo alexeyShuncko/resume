@@ -1,11 +1,9 @@
-import { useState } from "react";
-import { dataEng } from "./dataEng";
-import { dataRus } from "./dataRus";
+import { useState } from 'react';
+import { dataEng } from '../data/dataEng';
+import { dataRus } from '../data/dataRus';
 import photo from '../images/photo1.jpg'
 import LightModeIcon from '@mui/icons-material/LightMode';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
-
-
 
 
 
@@ -18,12 +16,10 @@ const Resume = (props) => {
 
 
   const handlerLanguage = (e) => {
-
     if (e.target.innerHTML === 'RUS' || e.target.innerHTML === 'ENG') {
       setLanguage(!language)
     } 
   }
-
 
   const handlerTheme = (e) => {
     let root = document.getElementById('root')
@@ -57,8 +53,8 @@ const Resume = (props) => {
       <div className='blockBtn' onClick={handlerLanguage}>
         {!language ? <button>RUS</button> : <button>ENG</button>}
         {!theme
-          ? <button className="dark" onClick={handlerTheme}><DarkModeIcon /></button>
-          : <button className="light" onClick={handlerTheme}><LightModeIcon /></button>}
+          ? <button className='dark' onClick={handlerTheme}><DarkModeIcon /></button>
+          : <button className='light' onClick={handlerTheme}><LightModeIcon /></button>}
       </div>
 
       <div className='leftSection'>
@@ -76,7 +72,7 @@ const Resume = (props) => {
             {data.contactInfo.list.map(el => (
               <li key={el.text}>
                 <span className='icon'>{el.icon}</span>
-                <a href={el.url} target="_blank" className='text' rel="noreferrer">{el.text}</a>
+                <a href={el.url} target='_blank' className='text' rel='noreferrer'>{el.text}</a>
               </li>
             ))
             }
