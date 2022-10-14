@@ -2,8 +2,8 @@ import { useState } from "react";
 import { dataEng } from "./dataEng";
 import { dataRus } from "./dataRus";
 import photo from '../images/photo1.jpg'
-import LightModeIcon from '@mui/icons-material/LightMode';
-import DarkModeIcon from '@mui/icons-material/DarkMode';
+// import LightModeIcon from '@mui/icons-material/LightMode';
+// import DarkModeIcon from '@mui/icons-material/DarkMode';
 
 
 
@@ -24,29 +24,32 @@ const Resume = (props) => {
       setLanguage(!language)
     }
     else if (e.target.innerHTML === 'Dark' || e.target.innerHTML ==='Light') {
+      let root = document.getElementById('root')
+      if (e.target.innerHTML === 'Dark') {
+          root.style.setProperty('--background', '#23242e')
+          root.style.setProperty('--backgroundResume', '#23242e')
+          root.style.setProperty('--primaryColor', '#fff')
+          root.style.setProperty('--paragrafColor', '#fff')
+          root.style.setProperty('--line', 'rgba(255,255,255,0.5)')
+          root.style.setProperty('--shadow', 'rgba(255,255,255,0.3)')  
+          root.style.setProperty('--progresColor', '#fff')
+          
+      }
+      else {
+        root.style.setProperty('--background', '#f9f9f9')
+        root.style.setProperty('--backgroundResume', '#fff')
+        root.style.setProperty('--primaryColor', '#333')
+        root.style.setProperty('--paragrafColor', '#646363')
+        root.style.setProperty('--line', 'rgba(0,0,0,0.2)')
+        root.style.setProperty('--shadow', 'rgba(0,0,0,0.2)') 
+        root.style.setProperty('--progresColor', '#ccc')  
+      }
       setTheme(!theme)
     }
   }
 
 
-  // const handlerContact =(e)=> {
-    
-  //    if (e.target.innerHTML.length === 24) {
-  //     window.open('https://github.com/alexeyShuncko')
-  //    }
-  //    else if (e.target.innerHTML === '@alexeyShuncko') {
-  //     window.open('https://t.me/alexeyShuncko')
-  //    }
-  //     else if (e.target.innerHTML.includes(',')) {
-  //     window.open('https://yandex.by/maps/geo/53177019/?ll=27.727503%2C53.882847&z=10.78')
-  //    }
-  //    else if (e.target.innerHTML.includes('335')) {
-  //     window.open('tel:+375333352328')
-  //    }
-
-
-     
-  // }
+ 
 
 
 

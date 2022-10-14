@@ -5,6 +5,8 @@
    --secondColor: #03a9f4;
    --progresColor: #ccc;
    --paragrafColor: #646363;
+   --line: rgba(0,0,0,0.2);
+   --shadow: rgba(0,0,0,0.2);
  }
 
 
@@ -25,6 +27,7 @@
    justify-content: center;
    align-items: center;
    width: 100%;
+   transition: 0.5s;
  }
 
  .container {
@@ -35,8 +38,9 @@
    background: var(--backgroundResume);
    display: grid;
    grid-template-columns: 1fr 2fr;
-   box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+   box-shadow: 0 35px 55px var(--shadow);
    margin: 50px;
+   transition: 0.5s;
  }
 
 
@@ -52,7 +56,8 @@
    flex-direction: column;
    align-items: center;
    padding-bottom: 20px;
-   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+   border-bottom: 1px solid var(--line);
+   transition: 0.5s;
 
  }
 
@@ -101,11 +106,13 @@
    text-transform: uppercase;
    margin-bottom: 20px;
    font-weight: 600;
+   transition: 0.5s;
  }
 
  .contactInfo ul li {
    margin: 10px 0;
    cursor: pointer;
+  
  }
 
  .contactInfo ul li .icon {
@@ -120,26 +127,34 @@
   text-decoration: none;
   font-weight: 300;
   color: var(--primaryColor);
+  transition: 0.5s;
  }
 
  /* ========== Образование ========== */
 
  .contactInfo.education li {
    margin-bottom: 15px;
+   
  }
 
  .contactInfo.education h5 {
    color: var(--secondColor);
    font-weight: 500;
+   margin-bottom: 3px;
+   transition: 0.5s;
  }
 
  .contactInfo.education h4:nth-child(2) {
    color: var(--primaryColor);
    font-weight: 500;
+   margin-bottom: 3px;
+   transition: 0.5s;
  }
 
  .contactInfo.education h4 {
-   font-weight: 300;
+   font-weight: 400;
+   color: #848c90;
+   transition: 0.5s;
  }
 
  /* ========== Языки ========== */
@@ -182,10 +197,12 @@
    letter-spacing: 1px;
    text-transform: uppercase;
    margin-bottom: 20px;
+   transition: 0.5s;
  }
 
  p {
    color: var(--paragrafColor);
+   transition: 0.5s;
  }
 
  /* ========== Опыт работы ========== */
@@ -203,6 +220,7 @@
    font-weight: 600;
    text-transform: uppercase;
    color: #848c90;
+   transition: 0.5s;
  }
 
 
@@ -210,6 +228,7 @@
    text-transform: uppercase;
    color: var(--secondColor);
    font-size: 16px;
+   transition: 0.5s;
  }
 
  /* ========== Профессиональные навыки ========== */
@@ -253,6 +272,7 @@
    color: var(--primaryColor);
    font-weight: 500;
    margin: 10px 0;
+   transition: 0.5s;
  }
 
  .about.interest ul li span {
@@ -269,6 +289,9 @@
    .container {
      grid-template-columns: repeat(1, 1fr);
      margin: 10px;
+   }
+   .rightSection {
+    padding: 0px 40px 40px 40px;
    }
  }
 
