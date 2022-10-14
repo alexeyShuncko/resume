@@ -112,11 +112,14 @@
    display: inline-block;
    vertical-align: middle;
    margin-right: 10px;
-   color: var(--secondColor)
+   color: var(--secondColor);
+   fill: var(--secondColor)
  }
 
- .contactInfo ul li span {
-   font-weight: 300;
+ .contactInfo ul li .text {
+  text-decoration: none;
+  font-weight: 300;
+  color: var(--primaryColor);
  }
 
  /* ========== Образование ========== */

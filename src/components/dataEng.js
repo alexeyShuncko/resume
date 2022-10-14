@@ -7,6 +7,7 @@ import SportsEsportsIcon from '@mui/icons-material/SportsEsports';
 import SportsSoccerIcon from '@mui/icons-material/SportsSoccer';
 import CodeIcon from '@mui/icons-material/Code';
 import RestaurantIcon from '@mui/icons-material/Restaurant';
+import  {ReactComponent as Skype} from '../images/skype.svg';
 
 
 
@@ -21,11 +22,12 @@ export const dataEng = {
     contactInfo: {
       title: 'Contact Info', 
       list: [
-        {icon: <PhoneIcon />, text: '+375 33 335 23 28'},
-        {icon: <TelegramIcon />, text: '@alexeyShuncko'},
-        {icon: <GitHubIcon />, text: 'github.com/alexeyShuncko'},
-        {icon: <MailOutlineIcon />, text: 'shuncko.a@yandex.ru'},
-        {icon: <LocationOnIcon />, text: 'Belarus, Minsk'},
+        {icon: <PhoneIcon />, text: '+375 33 335 23 28', url: 'tel:+375333352328'},
+        {icon: <TelegramIcon />, text: '@alexeyShuncko', url: 'https://t.me/alexeyShuncko'},
+        {icon: <GitHubIcon />, text: 'github.com/alexeyShuncko', url: 'https://github.com/alexeyShuncko'},
+        {icon: <MailOutlineIcon />, text: 'shuncko.a@yandex.ru', url: 'mailto:shuncko.a@yandex.ru'},
+        {icon: <Skype />, text: 'live:shuncko.a', url: 'https://join.skype.com/invite/Cal9JwY6Hkzc'},
+        {icon: <LocationOnIcon />, text: 'Belarus, Minsk', url: 'https://yandex.by/maps/geo/53177019/?ll=27.727503%2C53.882847&z=10.78'},
       ]},
       education: {title: 'Education', list: [
         {date: '2021-present', 
@@ -38,7 +40,7 @@ export const dataEng = {
     languages: {title: 'Languages', list: [
       {name: 'Russian', percent: '95%'},
       {name: 'English', percent: '35%'},
-      {name: 'Bellarusian', percent: '95%'},
+      {name: 'Belorusian', percent: '95%'},
     ]},
     about: {title: 'Profile', 
     p1: `I'm a cheerful guy 29 years old who likes programming, outdoor activities, team sports.
@@ -48,7 +50,7 @@ export const dataEng = {
       {date: '2021-present', name: 'GitHub, freelance', job: 'Junior Frontend Developer', 
       description: `Practical application of acquired knowledge. Development of own projects on github,
        each of which is deployed on github pages. Execution of test tasks. Freelance.`},
-      {date: '2015-2022', name: 'Gazprom transgaz Belarus,', job: 'Dispatcher', 
+      {date: '2015-2022', name: 'Gazprom transgaz Belarus', job: 'Dispatcher', 
       description: `Work in various positions, the last of which is the dispatcher. Responsibilities:
       operational management of gas transportation through the gas transmission system of the branch,
       constant monitoring of the parameters of the gas transmission system of the branch,
@@ -72,6 +74,6 @@ export const dataEng = {
       {icon: <SportsEsportsIcon fontSize='large'/>, name: 'Gaming'},
       {icon: <SportsSoccerIcon fontSize='large'/>, name: 'Football'},
       {icon: <RestaurantIcon fontSize='large'/>, name: 'Cooking'},
-      {icon: <CodeIcon fontSize='large'/>, name: 'Programming'},
+      {icon: <CodeIcon fontSize='large'/>, name: 'Frontend'},
     ]}
   }

@@ -1,3 +1,4 @@
+import React from 'react';
 import PhoneIcon from '@mui/icons-material/Phone';
 import TelegramIcon from '@mui/icons-material/Telegram';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
@@ -7,6 +8,8 @@ import SportsEsportsIcon from '@mui/icons-material/SportsEsports';
 import SportsSoccerIcon from '@mui/icons-material/SportsSoccer';
 import CodeIcon from '@mui/icons-material/Code';
 import RestaurantIcon from '@mui/icons-material/Restaurant';
+import  {ReactComponent as Skype} from '../images/skype.svg';
+
 
 
 
@@ -17,11 +20,12 @@ export const dataRus = {
     contactInfo: {
       title: 'Контакты', 
       list: [
-        {icon: <PhoneIcon />, text: '+375 33 335 23 28'},
-        {icon: <TelegramIcon />, text: '@alexeyShuncko'},
-        {icon: <GitHubIcon />, text: 'github.com/alexeyShuncko'},
-        {icon: <MailOutlineIcon />, text: 'shuncko.a@yandex.ru'},
-        {icon: <LocationOnIcon />, text: 'Беларусь, Минск'},
+        {icon: <PhoneIcon />, text: '+375 33 335 23 28', url: 'tel:+375333352328'},
+        {icon: <TelegramIcon />, text: '@alexeyShuncko', url: 'https://t.me/alexeyShuncko'},
+        {icon: <GitHubIcon />, text: 'github.com/alexeyShuncko', url: 'https://github.com/alexeyShuncko'},
+        {icon: <MailOutlineIcon />, text: 'shuncko.a@yandex.ru', url: 'mailto:shuncko.a@yandex.ru'},
+        {icon: <Skype />, text: 'live:shuncko.a', url: 'https://join.skype.com/invite/Cal9JwY6Hkzc'},
+        {icon: <LocationOnIcon />, text: 'Беларусь, Минск', url: 'https://yandex.by/maps/geo/53177019/?ll=27.727503%2C53.882847&z=10.78'},
       ]},
       education: {title: 'Образование', list: [
         {date: '2021-настоящее время', 
@@ -34,7 +38,7 @@ export const dataRus = {
     languages: {title: 'Языки', list: [
       {name: 'Русский', percent: '95%'},
       {name: 'Английский', percent: '35%'},
-      {name: 'Беларусский', percent: '95%'},
+      {name: 'Белорусский', percent: '95%'},
     ]},
     about: {title: 'Обо мне', 
     p1: `Жизнерадостный парень 29 лет, которому нравится программирование, активный отдых на природе, 
@@ -45,7 +49,7 @@ export const dataRus = {
       description: `Практическое применение получаемых знаний. 
       Разработка собственных проектов на GitHub, каждый из которых развёрнут на GitHub Pages. 
       Выполнение тестовых заданий. Фриланс.`},
-      {date: '2015-2022', name: 'Газпром трансгаз Беларусь,', job: 'Диспетчер', 
+      {date: '2015-2022', name: 'Газпром трансгаз Беларусь', job: 'Диспетчер', 
       description: `Работа на различных должностях, последняя из которых диспетчер. Обязанности: 
       оперативное руководство транспортировкой газа по газотранспортной системе филиала,
       постоянный контроль за параметрами газотранспортной системы филиала,

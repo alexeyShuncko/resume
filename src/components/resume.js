@@ -2,6 +2,8 @@ import { useState } from "react";
 import { dataEng } from "./dataEng";
 import { dataRus } from "./dataRus";
 import photo from '../images/photo1.jpg'
+import LightModeIcon from '@mui/icons-material/LightMode';
+import DarkModeIcon from '@mui/icons-material/DarkMode';
 
 
 
@@ -10,25 +12,51 @@ import photo from '../images/photo1.jpg'
 const Resume = (props) => {
 
   const [language, setLanguage] = useState(false)
+  const [theme, setTheme] = useState(false)
 
   const data = !language ? dataEng : dataRus
 
 
-  const handlerLanguage = () => {
-    setLanguage(!language)
+  const handlerLanguage = (e) => {
+
+   
+    if (e.target.innerHTML === 'RUS' || e.target.innerHTML ==='ENG') {
+      setLanguage(!language)
+    }
+    else if (e.target.innerHTML === 'Dark' || e.target.innerHTML ==='Light') {
+      setTheme(!theme)
+    }
   }
+
+
+  // const handlerContact =(e)=> {
+    
+  //    if (e.target.innerHTML.length === 24) {
+  //     window.open('https://github.com/alexeyShuncko')
+  //    }
+  //    else if (e.target.innerHTML === '@alexeyShuncko') {
+  //     window.open('https://t.me/alexeyShuncko')
+  //    }
+  //     else if (e.target.innerHTML.includes(',')) {
+  //     window.open('https://yandex.by/maps/geo/53177019/?ll=27.727503%2C53.882847&z=10.78')
+  //    }
+  //    else if (e.target.innerHTML.includes('335')) {
+  //     window.open('tel:+375333352328')
+  //    }
+
+
+     
+  // }
+
+
+
 
   return (
     <div className='container'>
 
-      <div className='blockBtn'>
-        {
-          !language
-            ? <button onClick={handlerLanguage}>RUS</button>
-            : <button onClick={handlerLanguage}>ENG</button>
-        }
-
-        <button>Night</button>
+      <div className='blockBtn' onClick={handlerLanguage}>
+        { !language ? <button>RUS</button> : <button>ENG</button> }
+        { !theme ?  <button>Dark</button> : <button>Light</button> }
       </div>
 
       <div className='leftSection'>
@@ -46,7 +74,7 @@ const Resume = (props) => {
             {data.contactInfo.list.map(el => (
               <li key={el.text}>
                 <span className='icon'>{el.icon}</span>
-                <span className='text'>{el.text}</span>
+                <a href={el.url} target="_blank" className='text' rel="noreferrer">{el.text}</a>
               </li>
             ))
             }
