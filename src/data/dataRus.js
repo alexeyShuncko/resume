@@ -58,7 +58,7 @@ export const dataRus = {
       учет количества газа, поставленного потребителям с постоянным взаимодействием с газоснабжающими 
       организациями страны.`},
     ]},
-    skills: {title: 'Профессиональные навыки', list: [
+    skills: {title: 'Навыки', list: [
       {name: 'HTML', percent: '90%'},
       {name: 'CSS, SASS', percent: '90%'},
       {name: 'Javascript', percent: '90%'},

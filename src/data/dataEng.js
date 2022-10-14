@@ -55,7 +55,7 @@ export const dataEng = {
       accounting for the amount of gas supplied to consumers with
       constant interaction with gas supply organizations of the country.`},
     ]},
-    skills: {title: 'Professional Skills', list: [
+    skills: {title: 'Skills', list: [
       {name: 'HTML', percent: '90%'},
       {name: 'CSS, SASS', percent: '90%'},
       {name: 'Javascript', percent: '90%'},

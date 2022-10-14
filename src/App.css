@@ -120,7 +120,7 @@
    vertical-align: middle;
    margin-right: 10px;
    color: var(--secondColor);
-   fill: var(--secondColor)
+   fill: var(--secondColor);
  }
 
  .contactInfo ul li .text {
@@ -208,7 +208,7 @@
  /* ========== Опыт работы ========== */
 
  .about .box {
-   display: flex;
+  display: flex;
    margin: 20px 0;
  }
 
@@ -293,9 +293,13 @@
    .rightSection {
     padding: 0px 40px 40px 40px;
    }
+   .contactInfo .title {
+    font-size: 24px;
+   }
  }
 
  @media (max-width: 760px) {
+  
    .about.interest ul {
      display: grid;
      grid-template-columns: repeat(2, 1fr);
@@ -303,12 +307,13 @@
  }
 
  @media (max-width: 600px) {
+  
    .about.interest ul {
      display: grid;
      grid-template-columns: repeat(1, 1fr);
    }
    .about .box {
-     flex-direction: column;
+    flex-direction: column;
    }
    .about .box .years_company {
      margin-bottom: 5px;
@@ -323,10 +328,10 @@
 
 .blockBtn {
   position: absolute;
-  right: 10px;
   top: 10px;
+  right: 10px;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   z-index: 10;
 }
  
