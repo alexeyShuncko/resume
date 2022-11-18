@@ -1,13 +1,13 @@
-import PhoneIcon from '@mui/icons-material/Phone';
-import TelegramIcon from '@mui/icons-material/Telegram';
-import MailOutlineIcon from '@mui/icons-material/MailOutline';
-import LocationOnIcon from '@mui/icons-material/LocationOn';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import SportsEsportsIcon from '@mui/icons-material/SportsEsports';
-import SportsSoccerIcon from '@mui/icons-material/SportsSoccer';
-import CodeIcon from '@mui/icons-material/Code';
-import RestaurantIcon from '@mui/icons-material/Restaurant';
-import  {ReactComponent as Skype} from '../images/skype.svg';
+import PhoneIcon from '@mui/icons-material/Phone'
+import TelegramIcon from '@mui/icons-material/Telegram'
+import MailOutlineIcon from '@mui/icons-material/MailOutline'
+import LocationOnIcon from '@mui/icons-material/LocationOn'
+import GitHubIcon from '@mui/icons-material/GitHub'
+import SportsEsportsIcon from '@mui/icons-material/SportsEsports'
+import SportsSoccerIcon from '@mui/icons-material/SportsSoccer'
+import CodeIcon from '@mui/icons-material/Code'
+import RestaurantIcon from '@mui/icons-material/Restaurant'
+import  {ReactComponent as Skype} from '../images/skype.svg'
 
 
 
@@ -44,8 +44,8 @@ export const dataEng = {
      then I will answer - "Arsenal".`},
     experience: {title: 'Experience', list: [
       {date: '2021-present', name: 'GitHub, freelance', job: 'Junior Frontend Developer', 
-      description: `Practical application of acquired knowledge. Development of own projects on github,
-       each of which is deployed on github pages. Execution of test tasks. Freelance.`},
+      description: `Practical application of acquired knowledge. Development of own projects on Github,
+       each of which is deployed on Github Pages and Vercel. Execution of test tasks. Freelance.`},
       {date: '2015-2022', name: 'Gazprom transgaz Belarus', job: 'Dispatcher', 
       description: `Work in various positions, the last of which is the dispatcher. Responsibilities:
       operational management of gas transportation through the gas transmission system of the branch,
@@ -57,10 +57,11 @@ export const dataEng = {
     ]},
     skills: {title: 'Skills', list: [
       {name: 'HTML', percent: '90%'},
-      {name: 'CSS, SASS', percent: '90%'},
+      {name: 'CSS, SASS, LESS', percent: '90%'},
       {name: 'Javascript', percent: '90%'},
       {name: 'Typescript', percent: '70%'},
       {name: 'React', percent: '85%'},
+      {name: 'Next.js', percent: '75%'},
       {name: 'Redux', percent: '85%'},
       {name: 'Git', percent: '85%'},
       {name: 'Webpack', percent: '70%'},

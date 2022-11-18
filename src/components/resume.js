@@ -1,9 +1,9 @@
-import { useState } from 'react';
-import { dataEng } from '../data/dataEng';
-import { dataRus } from '../data/dataRus';
+import { useState } from 'react'
+import { dataEng } from '../data/dataEng'
+import { dataRus } from '../data/dataRus'
 import photo from '../images/photo1.jpg'
-import LightModeIcon from '@mui/icons-material/LightMode';
-import DarkModeIcon from '@mui/icons-material/DarkMode';
+import LightModeIcon from '@mui/icons-material/LightMode'
+import DarkModeIcon from '@mui/icons-material/DarkMode'
 
 
 
@@ -13,7 +13,6 @@ const Resume = (props) => {
   const [theme, setTheme] = useState(false)
 
   const data = !language ? dataEng : dataRus
-
 
   const handlerLanguage = (e) => {
     if (e.target.innerHTML === 'RUS' || e.target.innerHTML === 'ENG') {
@@ -44,28 +43,21 @@ const Resume = (props) => {
     setTheme(!theme)
   }
 
-
-
-
   return (
     <div className='container'>
-
       <div className='blockBtn' onClick={handlerLanguage}>
         {!language ? <button>RUS</button> : <button>ENG</button>}
         {!theme
           ? <button className='dark' onClick={handlerTheme}><DarkModeIcon /></button>
           : <button className='light' onClick={handlerTheme}><LightModeIcon /></button>}
       </div>
-
       <div className='leftSection'>
-
         <div className='profileText'>
           <div className='imgBx'>
             <img src={photo} alt='My_photo' />
           </div>
           <h2>{data.profileText.name}<br /><span>{data.profileText.job}</span></h2>
         </div>
-
         <div className='contactInfo'>
           <h3 className='title'>{data.contactInfo.title}</h3>
           <ul>
@@ -78,7 +70,6 @@ const Resume = (props) => {
             }
           </ul>
         </div>
-
         <div className='contactInfo education'>
           <h3 className='title'>{data.education.title}</h3>
           <ul>
@@ -92,7 +83,6 @@ const Resume = (props) => {
             }
           </ul>
         </div>
-
         <div className='contactInfo language'>
           <h3 className='title'>{data.languages.title}</h3>
           <ul>
@@ -109,15 +99,11 @@ const Resume = (props) => {
           </ul>
         </div>
       </div>
-
       <div className='rightSection'>
-
-
         <div className='about'>
           <h2 className='title2'>{data.about.title}</h2>
           <p>{data.about.p1}</p>
         </div>
-
         <div className='about'>
           <h2 className='title2'>{data.experience.title}</h2>
           {
@@ -135,7 +121,6 @@ const Resume = (props) => {
             ))
           }
         </div>
-
         <div className='about skills'>
           <h2 className='title2'>{data.skills.title}</h2>
           {
@@ -149,7 +134,6 @@ const Resume = (props) => {
             ))
           }
         </div>
-
         <div className='about interest'>
           <h2 className='title2'>{data.interest.title}</h2>
           <ul>
@@ -164,7 +148,6 @@ const Resume = (props) => {
           </ul>
         </div>
       </div>
-
     </div>
   )
 }

@@ -1,14 +1,14 @@
-import React from 'react';
-import PhoneIcon from '@mui/icons-material/Phone';
-import TelegramIcon from '@mui/icons-material/Telegram';
-import MailOutlineIcon from '@mui/icons-material/MailOutline';
-import LocationOnIcon from '@mui/icons-material/LocationOn';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import SportsEsportsIcon from '@mui/icons-material/SportsEsports';
-import SportsSoccerIcon from '@mui/icons-material/SportsSoccer';
-import CodeIcon from '@mui/icons-material/Code';
-import RestaurantIcon from '@mui/icons-material/Restaurant';
-import  {ReactComponent as Skype} from '../images/skype.svg';
+import React from 'react'
+import PhoneIcon from '@mui/icons-material/Phone'
+import TelegramIcon from '@mui/icons-material/Telegram'
+import MailOutlineIcon from '@mui/icons-material/MailOutline'
+import LocationOnIcon from '@mui/icons-material/LocationOn'
+import GitHubIcon from '@mui/icons-material/GitHub'
+import SportsEsportsIcon from '@mui/icons-material/SportsEsports'
+import SportsSoccerIcon from '@mui/icons-material/SportsSoccer'
+import CodeIcon from '@mui/icons-material/Code'
+import RestaurantIcon from '@mui/icons-material/Restaurant'
+import  {ReactComponent as Skype} from '../images/skype.svg'
 
 
 
@@ -47,7 +47,7 @@ export const dataRus = {
     experience: {title: 'Опыт', list: [
       {date: '2021-настоящее время', name: 'GitHub, фриланс', job: 'Junior Frontend Developer', 
       description: `Практическое применение получаемых знаний. 
-      Разработка собственных проектов на GitHub, каждый из которых развёрнут на GitHub Pages. 
+      Разработка собственных проектов на GitHub, каждый из которых развёрнут на GitHub Pages или Vercel. 
       Выполнение тестовых заданий. Фриланс.`},
       {date: '2015-2022', name: 'Газпром трансгаз Беларусь', job: 'Диспетчер', 
       description: `Работа на различных должностях, последняя из которых диспетчер. Обязанности: 
@@ -60,10 +60,11 @@ export const dataRus = {
     ]},
     skills: {title: 'Навыки', list: [
       {name: 'HTML', percent: '90%'},
-      {name: 'CSS, SASS', percent: '90%'},
+      {name: 'CSS, SASS, LESS', percent: '90%'},
       {name: 'Javascript', percent: '90%'},
       {name: 'Typescript', percent: '70%'},
       {name: 'React', percent: '85%'},
+      {name: 'Next.js', percent: '75%'},
       {name: 'Redux', percent: '85%'},
       {name: 'Git', percent: '85%'},
       {name: 'Webpack', percent: '70%'},
