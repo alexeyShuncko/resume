@@ -115,7 +115,7 @@ export const dataRus = {
       { name: 'Next.js', percent: '75%' },
       { name: 'Redux', percent: '85%' },
       { name: 'Git', percent: '85%' },
-      { name: 'Webpack', percent: '70%' },
+      { name: 'Webpack, Gulp', percent: '70%' },
       { name: 'AntDesign, MUI', percent: '85%' },
     ],
   },
