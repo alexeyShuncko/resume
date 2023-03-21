@@ -125,6 +125,11 @@
    transition: 0.5s;
  }
 
+ .contactInfo ul li:hover .text {
+   color: var(--secondColor);
+   transition: 0.1s;
+ }
+
  /* ========== Образование ========== */
 
  .contactInfo.education li {
