@@ -125,7 +125,7 @@
    transition: 0.5s;
  }
 
- .contactInfo ul li:hover .text {
+ .contactInfo ul li:hover a.text {
    color: var(--secondColor);
    letter-spacing: 1px;
    transition: 0.1s;

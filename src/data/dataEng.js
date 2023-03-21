@@ -10,7 +10,7 @@ import RestaurantIcon from '@mui/icons-material/Restaurant';
 import { ReactComponent as Skype } from '../images/skype.svg';
 
 export const dataEng = {
-  profileText: { name: 'Aleksei Shunko', job: 'Junior Frontend Developer' },
+  profileText: { name: 'Aleksei Shunko', job: 'Frontend Developer' },
   contactInfo: {
     title: 'Contact Info',
     list: [
@@ -83,7 +83,7 @@ export const dataEng = {
       {
         date: '2021-present',
         name: 'GitHub, freelance',
-        job: 'Junior Frontend Developer',
+        job: 'Frontend Developer',
         description: `Practical application of acquired knowledge. Development of own projects on Github,
        each of which is deployed on Github Pages and Vercel. Execution of test tasks. Freelance.`,
       },
@@ -112,7 +112,7 @@ export const dataEng = {
       { name: 'React Native', percent: '75%' },
       { name: 'Next.js', percent: '75%' },
       { name: 'Redux', percent: '85%' },
-      { name: 'Git', percent: '85%' },
+      { name: 'Git, GitHub', percent: '85%' },
       { name: 'Webpack, Gulp', percent: '70%' },
       { name: 'AntDesign, MUI', percent: '85%' },
     ],
