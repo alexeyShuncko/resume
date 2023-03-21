@@ -1,9 +1,9 @@
-import { useState } from "react";
-import { dataEng } from "../data/dataEng";
-import { dataRus } from "../data/dataRus";
-import photo from "../images/photo1.jpg";
-import LightModeIcon from "@mui/icons-material/LightMode";
-import DarkModeIcon from "@mui/icons-material/DarkMode";
+import { useState } from 'react';
+import { dataEng } from '../data/dataEng';
+import { dataRus } from '../data/dataRus';
+import photo from '../images/photo1.jpg';
+import LightModeIcon from '@mui/icons-material/LightMode';
+import DarkModeIcon from '@mui/icons-material/DarkMode';
 
 const Resume = (props) => {
   const [language, setLanguage] = useState(false);
@@ -12,29 +12,29 @@ const Resume = (props) => {
   const data = !language ? dataEng : dataRus;
 
   const handlerLanguage = (e) => {
-    if (e.target.innerHTML === "RUS" || e.target.innerHTML === "ENG") {
+    if (e.target.innerHTML === 'RUS' || e.target.innerHTML === 'ENG') {
       setLanguage(!language);
     }
   };
 
   const handlerTheme = (e) => {
-    let root = document.getElementById("root");
-    if (e.currentTarget.classList.contains("dark")) {
-      root.style.setProperty("--background", "#23242e");
-      root.style.setProperty("--backgroundResume", "#23242e");
-      root.style.setProperty("--primaryColor", "#fff");
-      root.style.setProperty("--paragrafColor", "#fff");
-      root.style.setProperty("--line", "rgba(255,255,255,0.5)");
-      root.style.setProperty("--shadow", "rgba(255,255,255,0.3)");
-      root.style.setProperty("--progresColor", "#fff");
-    } else if (e.currentTarget.classList.contains("light")) {
-      root.style.setProperty("--background", "#f9f9f9");
-      root.style.setProperty("--backgroundResume", "#fff");
-      root.style.setProperty("--primaryColor", "#333");
-      root.style.setProperty("--paragrafColor", "#646363");
-      root.style.setProperty("--line", "rgba(0,0,0,0.2)");
-      root.style.setProperty("--shadow", "rgba(0,0,0,0.2)");
-      root.style.setProperty("--progresColor", "#ccc");
+    let root = document.getElementById('root');
+    if (e.currentTarget.classList.contains('dark')) {
+      root.style.setProperty('--background', '#23242e');
+      root.style.setProperty('--backgroundResume', '#23242e');
+      root.style.setProperty('--primaryColor', '#fff');
+      root.style.setProperty('--paragrafColor', '#fff');
+      root.style.setProperty('--line', 'rgba(255,255,255,0.5)');
+      root.style.setProperty('--shadow', 'rgba(255,255,255,0.3)');
+      root.style.setProperty('--progresColor', '#fff');
+    } else if (e.currentTarget.classList.contains('light')) {
+      root.style.setProperty('--background', '#f9f9f9');
+      root.style.setProperty('--backgroundResume', '#fff');
+      root.style.setProperty('--primaryColor', '#333');
+      root.style.setProperty('--paragrafColor', '#646363');
+      root.style.setProperty('--line', 'rgba(0,0,0,0.2)');
+      root.style.setProperty('--shadow', 'rgba(0,0,0,0.2)');
+      root.style.setProperty('--progresColor', '#ccc');
     }
     setTheme(!theme);
   };
@@ -69,13 +69,12 @@ const Resume = (props) => {
           <ul>
             {data.contactInfo.list.map((el) => (
               <li key={el.text}>
-                <span className="icon">{el.icon}</span>
                 <a
                   href={el.url}
                   target="_blank"
                   className="text"
-                  rel="noreferrer"
-                >
+                  rel="noreferrer">
+                  <span className="icon">{el.icon}</span>
                   {el.text}
                 </a>
               </li>

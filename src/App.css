@@ -127,6 +127,7 @@
 
  .contactInfo ul li:hover .text {
    color: var(--secondColor);
+   letter-spacing: 1px;
    transition: 0.1s;
  }
 
