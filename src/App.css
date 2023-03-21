@@ -32,18 +32,17 @@
    position: relative;
    width: 100%;
    max-width: 1000px;
-   min-height: 1000px;
    background: var(--backgroundResume);
    display: grid;
    grid-template-columns: 1fr 2fr;
-   box-shadow: 0 35px 55px var(--shadow);
-   margin: 50px;
+   box-shadow: 0 2.1875rem 3.4375rem var(--shadow);
+   margin: 3.125rem;
    transition: 0.5s;
  }
 
  .leftSection {
    position: relative;
-   padding: 40px;
+   padding: 2.5rem;
  }
 
  /* ========== Фото, имя ========== */
@@ -52,6 +51,7 @@
    display: flex;
    flex-direction: column;
    align-items: center;
+   font-size: 1rem;
    padding-bottom: 20px;
    border-bottom: 1px solid var(--line);
    transition: 0.5s;
@@ -59,8 +59,8 @@
 
  .profileText .imgBx {
    position: relative;
-   width: 200px;
-   height: 200px;
+   width: 12.5rem;
+   height: 12.5rem;
    border-radius: 50%;
    overflow: hidden;
  }
@@ -79,7 +79,7 @@
    text-transform: uppercase;
    font-weight: 600;
    text-align: center;
-   margin-top: 20px;
+   margin-top: 1.25rem;
    color: var(--primaryColor);
    line-height: 1.4em;
    transition: 0.5s;
@@ -93,29 +93,31 @@
  /* ========== Контакты ========== */
 
  .contactInfo {
-   padding-top: 40px;
+   padding-top: 2.5rem;
  }
 
  .contactInfo .title {
    color: var(--primaryColor);
-   letter-spacing: 1px;
+   letter-spacing: 0.0625rem;
    text-transform: uppercase;
-   margin-bottom: 20px;
+   margin-bottom: 1.25rem;
    font-weight: 600;
    transition: 0.5s;
  }
 
  .contactInfo ul li {
-   margin: 10px 0;
+   margin: 0.625rem 0;
    cursor: pointer;
  }
 
  .contactInfo ul li .icon {
    display: inline-block;
    vertical-align: middle;
-   margin-right: 10px;
+   margin-right: 0.625rem;
    color: var(--secondColor);
    fill: var(--secondColor);
+   width: 1.5rem;
+   height: 1.5rem;
  }
 
  .contactInfo ul li .text {
@@ -127,27 +129,27 @@
 
  .contactInfo ul li:hover a.text {
    color: var(--secondColor);
-   letter-spacing: 1px;
+   letter-spacing: 0.0625rem;
    transition: 0.1s;
  }
 
  /* ========== Образование ========== */
 
  .contactInfo.education li {
-   margin-bottom: 15px;
+   margin-bottom: 0.9375rem;
  }
 
  .contactInfo.education h5 {
    color: var(--secondColor);
    font-weight: 500;
-   margin-bottom: 3px;
+   margin-bottom: 0.1875rem;
    transition: 0.5s;
  }
 
  .contactInfo.education h4:nth-child(2) {
    color: var(--primaryColor);
    font-weight: 500;
-   margin-bottom: 3px;
+   margin-bottom: 0.1875rem;
    transition: 0.5s;
  }
 
@@ -162,10 +164,10 @@
  .contactInfo.language .percent {
    position: relative;
    display: block;
-   height: 6px;
+   height: 0.375rem;
    width: 100%;
    background: var(--progresColor);
-   margin-top: 5px;
+   margin-top: 0.3125rem;
  }
 
  .contactInfo.language .percent div {
@@ -178,13 +180,13 @@
 
  .rightSection {
    position: relative;
-   padding: 40px;
+   padding: 2.5rem;
  }
 
  /* ========== Обо мне ========== */
 
  .about {
-   margin-bottom: 50px;
+   margin-bottom: 3.125rem;
  }
 
  .about:last-child {
@@ -193,9 +195,9 @@
 
  .about .title2 {
    color: var(--primaryColor);
-   letter-spacing: 1px;
+   letter-spacing: 0.0625rem;
    text-transform: uppercase;
-   margin-bottom: 20px;
+   margin-bottom: 1.25rem;
    transition: 0.5s;
  }
 
@@ -208,11 +210,11 @@
 
  .about .box {
    display: flex;
-   margin: 20px 0;
+   margin: 1.25rem 0;
  }
 
  .about .box .years_company {
-   min-width: 150px;
+   min-width: 9.375rem;
  }
 
  .about .box .years_company h5 {
@@ -225,7 +227,6 @@
  .about .box .text h4 {
    text-transform: uppercase;
    color: var(--secondColor);
-   font-size: 16px;
    transition: 0.5s;
  }
 
@@ -236,7 +237,7 @@
    width: 100%;
    justify-content: center;
    align-items: center;
-   grid-template-columns: 150px 1fr;
+   grid-template-columns: 9.375rem 1fr;
  }
 
  .skills .box h4 {
@@ -248,7 +249,7 @@
  .skills .box .percent {
    position: relative;
    background: var(--progresColor);
-   height: 10px;
+   height: 0.625rem;
  }
 
  .skills .box .percent div {
@@ -269,7 +270,7 @@
  .about.interest ul li {
    color: var(--primaryColor);
    font-weight: 500;
-   margin: 10px 0;
+   margin: 0.625rem 0;
    transition: 0.5s;
  }
 
@@ -277,27 +278,29 @@
    display: inline-block;
    vertical-align: middle;
    color: var(--secondColor);
-   margin-right: 5px;
+   margin-right: 0.3125rem;
  }
 
  /* ========== Отзывчивость ========== */
 
  @media (max-width: 1100px) {
+
    .container {
      grid-template-columns: repeat(1, 1fr);
-     margin: 10px;
+     margin: 0.625rem;
    }
 
    .rightSection {
-     padding: 0px 40px 40px 40px;
+     padding: 0px 2.5rem 2.5rem 2.5rem;
    }
 
    .contactInfo .title {
-     font-size: 24px;
+     font-size: 1.5rem;
    }
  }
 
  @media (max-width: 760px) {
+
    .about.interest ul {
      display: grid;
      grid-template-columns: repeat(2, 1fr);
@@ -305,6 +308,7 @@
  }
 
  @media (max-width: 600px) {
+
    .about.interest ul {
      display: grid;
      grid-template-columns: repeat(1, 1fr);
@@ -315,7 +319,7 @@
    }
 
    .about .box .years_company {
-     margin-bottom: 5px;
+     margin-bottom: 0.3125rem;
    }
 
    .skills .box {
@@ -323,12 +327,54 @@
    }
  }
 
+
+ @media (-webkit-min-device-pixel-ratio: 3) and (min-width: 1000px) {
+
+   html {
+     font-size: 48px;
+   }
+
+   .container {
+     grid-template-columns: repeat(1, 1fr);
+     margin: 0.625rem;
+     max-width: 100%;
+   }
+
+   .rightSection {
+     padding: 0px 2.5rem 2.5rem 2.5rem;
+   }
+
+   .contactInfo .title {
+     font-size: 1.5rem;
+   }
+
+   .about.interest ul {
+     display: grid;
+     grid-template-columns: repeat(1, 1fr);
+   }
+
+   .about .box {
+     flex-direction: column;
+   }
+
+   .about .box .years_company {
+     margin-bottom: 0.3125rem;
+   }
+
+   .skills .box {
+     grid-template-columns: repeat(1, 1fr);
+   }
+ }
+
+
+
+
  /* ========== Кнопки ========== */
 
  .blockBtn {
    position: absolute;
-   top: 10px;
-   right: 10px;
+   top: 0.625rem;
+   right: 0.625rem;
    display: flex;
    justify-content: flex-end;
    z-index: 10;
@@ -338,21 +384,21 @@
    border: none;
    outline: none;
    cursor: pointer;
-   padding: 5px 10px;
+   padding: 0.3125rem 0.625rem;
    background: var(--secondColor);
    color: var(--primaryColor);
-   box-shadow: 0 3px 10px var(--primaryColor);
-   margin-left: 10px;
+   box-shadow: 0 0.1875rem 0.625rem var(--primaryColor);
+   margin-left: 0.625rem;
    text-transform: uppercase;
-   letter-spacing: 1px;
-   font-weight: 500;
-   border-radius: 5px;
+   letter-spacing: 0.0625rem;
+   font-size: 1rem;
+   border-radius: 0.3125rem;
    opacity: 0.9;
  }
 
  .blockBtn button:active {
-   box-shadow: 0 3px 10px var(--primaryColor),
-     0 3px 20px var(--primaryColor);
+   box-shadow: 0 0.1875rem 0.625rem var(--primaryColor),
+     0 0.1875rem 1.25rem var(--primaryColor);
  }
 
  .blockBtn button:hover {

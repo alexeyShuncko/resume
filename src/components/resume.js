@@ -5,7 +5,7 @@ import photo from '../images/photo1.jpg';
 import LightModeIcon from '@mui/icons-material/LightMode';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 
-const Resume = (props) => {
+const Resume = () => {
   const [language, setLanguage] = useState(false);
   const [theme, setTheme] = useState(false);
 
